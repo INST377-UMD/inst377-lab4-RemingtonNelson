@@ -1,0 +1,45 @@
+body {
+    color: aqua;
+    background-color: blue;
+}
+
+.Sections {
+    padding: 10px;
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    align-items: center;
+}
+
+#Section1 {
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#Section2 {
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#Section3 { 
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#Section4 {
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+}
+

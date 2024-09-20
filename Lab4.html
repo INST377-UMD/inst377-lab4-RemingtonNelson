@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Lab 4 - Javascript</title>
+        <link rel = "stylesheet" href="Lab4.css">
+        <h1 id="Title">INST377 - Lab 4</h1>
+    </head>
+
+    <body>
+        
+
+        <div>
+
+        <!-- Section One -->
+        <section id="Section1" class="Sections"> 
+            <form>
+                <label for="Name">Name: </label>
+                <input type="text" id="Name" required>
+            
+                <button onclick="alertMe()">Alert Me!</button>
+            </form>
+        </section>
+
+        <section id="Section2" class="Sections">
+
+            <button onclick="changeColor()">Change Color!</button>
+
+        </section>    
+        
+        <br>
+
+        <section id="Section3" class="Sections">
+            <form name="textValidator">
+                <label>Text Tester: </label>
+                <input type="text" id="Tester">
+                
+                <button onclick="validation()">Validate Text</button>
+            </form>
+        </section> <!--Section 3 end-->
+
+        <section id="Section4" class="Sections">
+            <button onclick="addText()">Add Text</button>
+        </section> <!--Section 4 end-->
+
+    </div><!-- Sections end -->
+
+        <script type="text/javascript">
+            function changeColor() {
+                if (document.body.style.backgroundColor == 'blue'){
+                    const t = document.body.style.backgroundColor = 'red';
+                }
+                else{
+                    const t = document.body.style.backgroundColor = 'blue';
+                }
+
+                console.log('Element is:',t)
+            }
+
+            function alertMe() {
+                var t = document.getElementById('Name').value;
+                alert("Hi "+t+"!")
+            }
+
+            function validation() {
+                var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                let x = document.forms['Tester'];
+
+                if (validation.test(document.textValidator.Tester.value)){
+                    alert("Cannot have Special characters");
+                }
+                else
+                    return None;
+            }
+
+            function addText() {
+                document.getElementById('Title').innerHTML += " - Add Text"
+            }
+        </script>
+    </body>
+</html>
